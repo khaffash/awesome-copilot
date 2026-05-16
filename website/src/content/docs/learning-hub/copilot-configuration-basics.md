@@ -658,6 +658,10 @@ A: Repository-level Copilot configuration (such as `.github/agents/`, `.github/s
 
 A: Use user-level settings in your IDE for personal preferences that should apply everywhere. For customizations specific to a technology or framework (like React conventions), consider creating a collection in the awesome-copilot-hub repository that you can reference across multiple projects.
 
+**Q: How do I keep Copilot settings when creating a new repo or after closing a workspace?**
+
+A: Keep your Copilot configuration in version control so it travels with the repo. Commit files like `AGENTS.md`, `.github/copilot-instructions.md`, `.github/instructions/`, `.github/agents/`, and `.github/skills/` to your repository. When you start a new project, copy these folders over or create a template repo that already includes them. For personal preferences that should follow you across every repo, use user-level config like `~/.copilot/agents/` and `~/.copilot/copilot-instructions.md` (or IDE settings sync).
+
 ## Next Steps
 
 Now that you understand Copilot configuration, explore how to create powerful customizations:
