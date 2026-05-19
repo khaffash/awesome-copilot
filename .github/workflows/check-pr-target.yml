@@ -1,10 +1,7 @@
 name: Check PR Target Branch
 
 on:
-  pull_request_target:
-    branches: [main]
-    types: [opened]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   pull-requests: write
 

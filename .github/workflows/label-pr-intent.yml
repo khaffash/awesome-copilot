@@ -1,9 +1,7 @@
 name: Label PR Intent
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened, edited, ready_for_review]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   issues: write
   pull-requests: write

@@ -5,10 +5,7 @@ name: Skill Validator — PR Comment
 # so it is safe for fork PRs.
 
 on:
-  workflow_run:
-    workflows: ["Skill Validator — PR Gate"]
-    types: [completed]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   issues: write
   pull-requests: write

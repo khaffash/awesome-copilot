@@ -48,9 +48,6 @@
 
 name: "Learning Hub Updater"
 "on":
-  schedule:
-  - cron: "13 19 * * *"
-    # Friendly format: daily (scattered)
   workflow_dispatch:
     inputs:
       aw_context:

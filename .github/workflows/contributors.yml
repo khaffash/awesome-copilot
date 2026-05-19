@@ -1,10 +1,7 @@
 name: Contributors
 
 on:
-  schedule:
-    - cron: '0 3 * * 0' # Weekly on Sundays at 3am UTC
-  workflow_dispatch: # Manual trigger
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 jobs:
   contributors:
     runs-on: ubuntu-latest

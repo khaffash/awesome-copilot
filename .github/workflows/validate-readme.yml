@@ -1,20 +1,7 @@
 name: Validate README.md
 
 on:
-  pull_request:
-    branches: [staged]
-    types: [opened, synchronize, reopened]
-    paths:
-      - "instructions/**"
-      - "prompts/**"
-      - "agents/**"
-      - "plugins/**"
-      - "workflows/**"
-      - "*.js"
-      - "README.md"
-      - "docs/**"
-      - "skills/**"
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 jobs:
   validate-readme:
     permissions:

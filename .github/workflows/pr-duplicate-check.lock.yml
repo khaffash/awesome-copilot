@@ -47,12 +47,7 @@
 
 name: "PR Duplicate Check"
 "on":
-  pull_request:
-    types:
-    - opened
-    - synchronize
-    - reopened
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions: {}
 
 concurrency:

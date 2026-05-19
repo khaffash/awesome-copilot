@@ -1,12 +1,7 @@
 name: Validate Agentic Workflow Contributions
 
 on:
-  pull_request:
-    branches: [staged]
-    types: [opened, synchronize, reopened]
-    paths:
-      - "workflows/**"
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   contents: read
   pull-requests: write

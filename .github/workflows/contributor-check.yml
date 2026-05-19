@@ -1,11 +1,7 @@
 name: Contributor Reputation Check
 
 on:
-  pull_request_target:
-    types: [opened]
-  issues:
-    types: [opened]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   contents: read
   issues: write

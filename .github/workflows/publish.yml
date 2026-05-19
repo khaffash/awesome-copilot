@@ -1,9 +1,7 @@
 name: Publish distribution branches
 
 on:
-  push:
-    branches: [staged]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 env:
   SOURCE_BRANCH: staged
   LEGACY_PUBLISHED_BRANCH: main

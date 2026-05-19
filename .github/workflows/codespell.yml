@@ -1,11 +1,7 @@
 name: Check Spelling
 
 on:
-  push:
-    branches: [staged]
-  pull_request:
-    branches: [staged]
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   contents: read
 

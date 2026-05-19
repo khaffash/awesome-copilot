@@ -1,10 +1,7 @@
 name: Call Webhooks on Main Push
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch: # Disabled - workflows can only be triggered manually
 permissions:
   contents: read
   actions: none
